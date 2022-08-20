@@ -1,12 +1,7 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import type { NextApiRequest, NextApiResponse } from "next";
 import { Product } from "./types";
 
-export default function handler(
-  req: NextApiRequest,
-  res: NextApiResponse<Product>
-) {
-  res.status(200).json({
+export const PRODUCTS: Product[] = [
+  {
     id: "MLA741093357",
     site_id: "MLA",
     title: "Peluche Stitch Angel Lilo 1 Metro 100cm Reales Gigante",
@@ -76,55 +71,55 @@ export default function handler(
       {
         id: "MLA741093357-1768858232",
         text: `SOMOS MULTIVENTAS AZ
-        MERCADOLIBRE PLATINUM UNOS DE LOS MEJORES VENDEDORES EN EL SITIO!!!
-        
-        Te presentamos:
-        Peluche Pokemon
-        VARIOS MODELOS DISPONIBLES
-        
-        Consultar stock del modelo deseado
-        O elegí tu modelo en la opción donde dice color y selecciona el producto deseado
-        
-        TAMBIÉN TENEMOS EN TAMAÑO GRANDE DE 35cm
-        LLÉVATELO AL MEJOR PRECIO
-        
-        Descripción:
-        -Excelente calidad y diseño Premium
-        -Ojos bordados y relleno de vellón súper soft
-        -Muy suave y más hermoso que nunca!!
-        -17 a 22cm de alto según el modelo
-        - muy suave al tacto
-        - excelente calidad de detalles y terminación
-        - precio por unidad
-        
-        HACEMOS PRECIO POR MAYOR
-        ( EL MEJOR PRECIO DEL MERCADO)
-        
-        FOTOS REALES DEL PRODUCTO
-        EL PRECIO ES POR UNIDAD
-        
-        Estamos Ubicados:
-        TENEMOS LOCAL AL PÚBLICO
-        -En Balvanera (MicroCentro)
-        a 6 cuadras de las Av.CALLAO Y Av.CORRIENTES
-        Y 5 cuadras de Pueyrredon y av rivadavia
-        
-        Horarios de Atención:
-        -Lunes a Viernes: 10hs a 18hs
-        -Sábados: 10 a 14hs
-        
-        MÉTODOS DE ENVIOS:
-        
-        -HACEMOS ENVIOS A TODO EL PAIS MEDIANTE MERCADOENVIOS (SE ENVÍA EL MISMO DÍA O AL SIGUIENTE SEGÚN EL HORARIO DE COMPRA)
-        
-        -HACEMOS ENVÍOS AL DÍA MEDIANTE ENVIOS FLEX TE LLEGA EL MISMO DÍA SI REALIZAS LA COMPRA ANTES DE LAS 14hs (el tiempo de demora es según el cadete que te puede llegar entre las 17hs a 22hs)
-        
-        IMPORTANTE: Debajo de cada publicación puede ver los productos que tenemos publicados en "Más publicaciones del Vendedor", si usted va a realizar la compra con Mercadoenvíos por más de un producto y quiere abonar un solo envío puede seleccionar la opción de agregar en el carrito.
-        
-        Tu consulta no molesta, preguntar ante cualquier duda.
-        Recorda que tu oferta es un compromiso de compra y deberás comunicarte dentro de los 2-3 dias luego de la misma.
-        
-        Visita mis otros artículos publicados. DESDE YA GRACIAS`,
+                MERCADOLIBRE PLATINUM UNOS DE LOS MEJORES VENDEDORES EN EL SITIO!!!
+                
+                Te presentamos:
+                Peluche Pokemon
+                VARIOS MODELOS DISPONIBLES
+                
+                Consultar stock del modelo deseado
+                O elegí tu modelo en la opción donde dice color y selecciona el producto deseado
+                
+                TAMBIÉN TENEMOS EN TAMAÑO GRANDE DE 35cm
+                LLÉVATELO AL MEJOR PRECIO
+                
+                Descripción:
+                -Excelente calidad y diseño Premium
+                -Ojos bordados y relleno de vellón súper soft
+                -Muy suave y más hermoso que nunca!!
+                -17 a 22cm de alto según el modelo
+                - muy suave al tacto
+                - excelente calidad de detalles y terminación
+                - precio por unidad
+                
+                HACEMOS PRECIO POR MAYOR
+                ( EL MEJOR PRECIO DEL MERCADO)
+                
+                FOTOS REALES DEL PRODUCTO
+                EL PRECIO ES POR UNIDAD
+                
+                Estamos Ubicados:
+                TENEMOS LOCAL AL PÚBLICO
+                -En Balvanera (MicroCentro)
+                a 6 cuadras de las Av.CALLAO Y Av.CORRIENTES
+                Y 5 cuadras de Pueyrredon y av rivadavia
+                
+                Horarios de Atención:
+                -Lunes a Viernes: 10hs a 18hs
+                -Sábados: 10 a 14hs
+                
+                MÉTODOS DE ENVIOS:
+                
+                -HACEMOS ENVIOS A TODO EL PAIS MEDIANTE MERCADOENVIOS (SE ENVÍA EL MISMO DÍA O AL SIGUIENTE SEGÚN EL HORARIO DE COMPRA)
+                
+                -HACEMOS ENVÍOS AL DÍA MEDIANTE ENVIOS FLEX TE LLEGA EL MISMO DÍA SI REALIZAS LA COMPRA ANTES DE LAS 14hs (el tiempo de demora es según el cadete que te puede llegar entre las 17hs a 22hs)
+                
+                IMPORTANTE: Debajo de cada publicación puede ver los productos que tenemos publicados en "Más publicaciones del Vendedor", si usted va a realizar la compra con Mercadoenvíos por más de un producto y quiere abonar un solo envío puede seleccionar la opción de agregar en el carrito.
+                
+                Tu consulta no molesta, preguntar ante cualquier duda.
+                Recorda que tu oferta es un compromiso de compra y deberás comunicarte dentro de los 2-3 dias luego de la misma.
+                
+                Visita mis otros artículos publicados. DESDE YA GRACIAS`,
       },
     ],
     accepts_mercadopago: true,
@@ -473,5 +468,5 @@ export default function handler(
     health: 0.88,
     catalog_listing: false,
     channels: ["marketplace"],
-  });
-}
+  },
+];
