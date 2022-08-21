@@ -4,7 +4,8 @@
     "paths": {
       "@/pages/*": ["pages/*"],
       "@/components/*": ["components/*"],
-      "@/services/*": ["services/*"]
+      "@/services/*": ["services/*"],
+      "@/assets/*": ["assets/*"]
     },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext", "es6"],
@@ -22,7 +23,8 @@
     "incremental": true,
     "noImplicitAny": true,
     "noImplicitThis": true,
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "plugins": [{ "name": "typescript-plugin-css-modules" }]
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
