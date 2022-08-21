@@ -1,0 +1,21 @@
+/* == Search == */
+.search__input {
+  font-size: 1rem;
+  padding: 7px 60px 9px 15px;
+  color: #333;
+}
+
+/* Chrome, Firefox, Opera, Safari 10.1+ */
+.search__input::placeholder {
+  opacity: 0.38; /* Firefox */
+}
+
+/* Internet Explorer 10-11 */
+.search__input:-ms-input-placeholder {
+  opacity: 0.38;
+}
+
+/* Microsoft Edge */
+.search__input::-ms-input-placeholder {
+  opacity: 0.38;
+}
