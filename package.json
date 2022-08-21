@@ -9,11 +9,13 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest --verbose",
-    "test:ci": "jest --ci"
+    "test:ci": "jest --ci",
+    "cypress:open": "cypress open"
   },
   "dependencies": {
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
+    "@mui/icons-material": "^5.8.4",
     "@mui/material": "^5.10.1",
     "next": "12.2.5",
     "react": "18.2.0",
@@ -27,6 +29,7 @@
     "@types/node": "18.7.5",
     "@types/react": "18.0.17",
     "@types/react-dom": "18.0.6",
+    "cypress": "^10.6.0",
     "eslint": "8.22.0",
     "eslint-config-next": "12.2.5",
     "jest": "^28.1.3",
